@@ -71,7 +71,7 @@ ul {
     background-color: black;
     position: absolute;
     left: 50%;
-    transform: translatex(-50%);
+    transform: translateY(-50%);
 }
 
 .sidebar > h3::before {
@@ -93,10 +93,10 @@ ul {
     margin-bottom: 5px;
 }
 
-.sidebar ul li a:hover, 
+/* .sidebar ul li a:hover, 
 .sidebar ul li a:active {
 
-}
+} */
 
 .sidebar ul li a span {
     font-size: 14px;
@@ -254,10 +254,6 @@ ul {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-}
-
-.content .wrapper .welcome .intro div {
-
 }
 
 .content .wrapper .welcome .intro div h2 {
