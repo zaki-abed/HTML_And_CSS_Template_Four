@@ -39,6 +39,14 @@ ul {
     margin: 0;
 }
 
+/* Start Component */
+.box {
+    background-color: white;
+    padding: 15px;
+    border-radius: 15px;
+}
+/* End Component */
+
 /* => For Scroll */
 ::-webkit-scrollbar {
     width: 10px;
@@ -315,5 +323,53 @@ ul {
 
 .content .wrapper .welcome a:hover {
     background-color: var(--blue-alt-color);
+}
+
+/* => Content => Wrapper => Quick Draft */
+.content .wrapper .quick-draft {
+
+}
+
+.content .wrapper .quick-draft h2 {
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.content .wrapper .quick-draft span {
+    display: block;
+    color: var(--grey-color);
+    font-size: 15px;
+}
+
+.content .wrapper .quick-draft form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    margin: 25px 0 15px;
+}
+
+.content .wrapper .quick-draft form input:not(input[type=submit]) {
+    padding: 10px;
+    background-color: #eee;
+    border: none;
+    border-radius: 7px;
+}
+
+.content .wrapper .quick-draft form textarea {
+    background-color: #eee;
+    padding: 10px;
+    border: none;
+    border-radius: 7px;
+    height: 200px;
+}
+
+.content .wrapper .quick-draft form input[type=submit] {
+    width: fit-content;
+    background-color: var(--blue-color);
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 7px;
+    align-self: flex-end;
 }
 /* End Content */
