@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Template 4</title>
+    <link rel="stylesheet" href="css/framework.css" />
+    <link rel="stylesheet" href="css/master.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+  </head>
+  <body>
+    <div class="page d-flex">
+      <!-- Sidebar -->
+      <div class="sidebar bg-white p-20 p-relative">
+        <h3 class="p-relative text-c mt-0">Zaki</h3>
+        <ul>
+          <li>
+            <a
+              class="d-flex align-center fs-14 c-black rad-6 p-10"
+              href="index.html"
+            >
+              <i class="fa-regular fa-chart-bar fa-fw"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="active d-flex align-center fs-14 c-black rad-6 p-10"
+              href="settings.html"
+            >
+              <i class="fa-solid fa-gear fa-fw"></i>
+              <span>Settings</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="d-flex align-center fs-14 c-black rad-6 p-10"
+              href="profile.html"
+            >
+              <i class="fa-regular fa-user fa-fw"></i>
+              <span>Profile</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="d-flex align-center fs-14 c-black rad-6 p-10"
+              href="projects.html"
+            >
+              <i class="fa-solid fa-diagram-project fa-fw"></i>
+              <span>Projects</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="d-flex align-center fs-14 c-black rad-6 p-10"
+              href="courses.html"
+            >
+              <i class="fa-solid fa-graduation-cap fa-fw"></i>
+              <span>Courses</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="d-flex align-center fs-14 c-black rad-6 p-10"
+              href="friends.html"
+            >
+              <i class="fa-regular fa-circle-user fa-fw"></i>
+              <span>Friends</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="d-flex align-center fs-14 c-black rad-6 p-10"
+              href="files.html"
+            >
+              <i class="fa-regular fa-file fa-fw"></i>
+              <span>Files</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="d-flex align-center fs-14 c-black rad-6 p-10"
+              href="plans.html"
+            >
+              <i class="fa-regular fa-credit-card fa-fw"></i>
+              <span>Plans</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Content -->
+      <div class="content w-full">
+        <!-- Head -->
+        <div class="head">
+          <div class="search">
+            <input type="text" placeholder="Type A keyword" />
+          </div>
+          <div class="icons">
+            <span>
+              <i class="fa-regular fa-bell fa-lg"></i>
+            </span>
+            <img src="images/avatar.png" alt="Person" />
+          </div>
+        </div>
+        <!-- Word Heading -->
+        <h1>Setting</h1>
+        <!-- Wrapper -->
+        <div class="setting">
+         <div class="wrapper">
+            <!-- site-control -->
+            <div class="site-control box">
+                <h2 class="title">Site Control</h2>
+                <span class="sub-title">Control The Website If There Is Maintenance</span>
+                <div class="row">
+                    <div>
+                        <h4>Website Control</h4>
+                        <span>Open/Close Website And Type The Reason</span>
+                    </div>
+                    <!-- Checkbox -->
+                    <label>
+                        <input type="checkbox" class="toggle-checkbox">
+                        <div class="toggle-switch"></div>
+                    </label>
+                </div>
+                <textarea placeholder="Close Message Content"></textarea>
+            </div>
+            <!-- / site-control -->
+            <!-- General Info -->
+            <div class="general-info box">
+                <h2 class="title">General Info</h2>
+                <span class="sub-title">General Information About Your Account</span>
+                <form action="#">
+                    <div class="input-gruop">
+                        <label for="first-name">First Name</label>
+                        <input type="text" placeholder="First Name" id="first-name">
+                    </div>
+                    <div class="input-gruop">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" placeholder="Last Name" id="last-name">
+                    </div>
+                    <div class="input-gruop">
+                        <label for="email">Email</label>
+                        <div>
+                            <input type="email" placeholder="o@nn.sa" id="email" disabled>
+                            <input type="submit" value="Change">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!-- / General Info -->
+            <!-- Security Info -->
+            <div class="security-info box">
+                <h2 class="title">Security Info</h2>    
+                <span class="sub-title">Security Information About Your Account</span>
+                <form action="#">
+                    <div class="input-gruop">
+                        <div class="col">
+                            <p>Password</p>
+                            <span>Last Change On 25/10/2021</span>
+                        </div>
+                        <a href="#" class="change-password">Change</a>
+                    </div>
+                    <div class="input-gruop">
+                        <div class="col">
+                            <p>Two-Factor Authentication</p>
+                            <span>Enable/Disable The Feature</span>
+                        </div>
+                        <!-- Checkbox -->
+                        <label>
+                            <input type="checkbox" class="toggle-checkbox">
+                            <div class="toggle-switch"></div>
+                        </label>
+                    </div>
+                    <div class="input-gruop">
+                        <div class="col">
+                            <p>Devices</p>
+                            <span>Check The Login Devices List</span>
+                        </div>
+                        <a href="#" class="device">Devices</a>
+                    </div>
+                </form>
+            </div>
+            <!-- / Security Info -->
+            <!-- Social Info -->
+            <div class="social-info box">
+                <h2 class="title">Social Info</h2>
+                <span class="sub-title">Social Media Information</span>
+                <form action="#">
+                    <div>
+                        <i class="fa-brands fa-twitter"></i>
+                        <input type="text" placeholder="Twitter Username">
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <input type="text" placeholder="Facebook Username">
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <input type="text" placeholder="Linkedin Username">
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-youtube"></i>
+                        <input type="text" placeholder="Youtube Username">
+                    </div>
+                </form>
+            </div>
+            <!-- / Social Info -->
+            <!-- Widgets Control -->
+            <div class="widgets-control box">
+                <h2 class="title">Widgets Control</h2>
+                <span class="sub-title">Show/Hide Widgets</span>
+                <form action="#">
+                    <div class="control">
+                        <input type="checkbox" id="one" checked>
+                        <label for="one">Quick Draft</label>
+                    </div>
+                    <div class="control">
+                        <input type="checkbox" id="tow">
+                        <label for="tow">Yearly Targets</label>
+                    </div>
+                    <div class="control">
+                        <input type="checkbox" id="three" checked>
+                        <label for="three">Tickets Statistics</label>
+                    </div>
+                    <div class="control">
+                        <input type="checkbox" id="four">
+                        <label for="four">Latest News</label>
+                    </div>
+                    <div class="control">
+                        <input type="checkbox" id="five" checked>
+                        <label for="five">Latest Tasks</label>
+                    </div>
+                    <div class="control">
+                        <input type="checkbox" id="six">
+                        <label for="six">Top Search Items</label>
+                    </div>
+                </form>
+            </div>
+            <!-- / Widgets Control -->
+            <!-- Backup Manager -->
+            <div class="backup-manager box">
+                <h2 class="title">Backup Manager</h2>
+                <span class="sub-title">Control Backup Time And Location</span>
+                <form action="#">
+                    <div class="row-1">
+                        <div class="input-gruop">
+                            <input type="radio" id="daily" name="one" checked>
+                            <label for="daily">Daily</label>
+                        </div>
+                        <div class="input-gruop">
+                            <input type="radio" id="weekly" name="one">
+                            <label for="weekly">Weekly</label>
+                        </div>
+                        <div class="input-gruop">
+                            <input type="radio" id="monthly" name="one">
+                            <label for="monthly">Monthly</label>
+                        </div>
+                    </div>
+
+                    <div class="row-2">
+                        <input type="radio" name="tow" id="megaman">
+                        <div class="server">
+                            <label for="megaman">
+                                <i class="fa-solid fa-server d-block mb-10"></i>
+                                Megaman
+                            </label>
+                        </div>
+
+                        <input type="radio" name="tow" id="zero" checked>
+                        <div class="server">
+                            <label for="zero">
+                                <i class="fa-solid fa-server d-block mb-10"></i>
+                                Zero
+                            </label>
+                        </div>
+                        
+                        <input type="radio" id="sigma" name="tow">
+                        <div  class="server">
+                            <label for="sigma">
+                                <i class="fa-solid fa-server d-block mb-10"></i>
+                                Sigma
+                            </label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!-- / Backup Manager -->
+          </div>
+        </div>
+        <!-- / wrapper -->
+      </div>
+      <!-- / content -->
+    </div>
+    <!-- / page -->
+  </body>
+</html>
