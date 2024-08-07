@@ -1315,22 +1315,22 @@ ul {
 }
 
 /* => Content => setting => Wrapper => Backup Manager */
-.backup-manager form .row-1 {
+.setting .backup-manager form .row-1 {
     border-bottom: 1px solid #eee;
     padding-bottom: 20px;
 }
 
-.backup-manager form input {
+.setting .backup-manager form input {
     appearance: none;
     margin-bottom: 20px;
 }
 
-.backup-manager form .row-1 .input-gruop label {
+.setting .backup-manager form .row-1 .input-gruop label {
     position: relative;
     padding-left: 30px;
 }
 
-.backup-manager form .row-1 .input-gruop label::before {
+.setting .backup-manager form .row-1 .input-gruop label::before {
     content: "";
     position: absolute;
     top: 0px;
@@ -1341,7 +1341,7 @@ ul {
     border-radius: 50%;
 }
 
-.backup-manager form .row-1 .input-gruop label::after {
+.setting .backup-manager form .row-1 .input-gruop label::after {
     content: "";
     position: absolute;
     top: 5px;
@@ -1353,16 +1353,16 @@ ul {
     transition: 0.3s;
 }
 
-.backup-manager form .row-1 .input-gruop input[type=radio]:checked + label::before {
+.setting .backup-manager form .row-1 .input-gruop input[type=radio]:checked + label::before {
     border-color: var(--blue-color);
 }
 
-.backup-manager form .row-1 .input-gruop input[type=radio]:checked + label::after {
+.setting .backup-manager form .row-1 .input-gruop input[type=radio]:checked + label::after {
     background: var(--blue-color);
     transform: scale(1)
 }
 
-.backup-manager form .row-2 {
+.setting .backup-manager form .row-2 {
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
@@ -1370,12 +1370,12 @@ ul {
 }
 
 @media (max-width: 768px) {
-    .backup-manager form .row-2 {
+    .setting .backup-manager form .row-2 {
         flex-wrap: wrap;
     }
 }
 
-.backup-manager form .row-2 .server {
+.setting .backup-manager form .row-2 .server {
     border: 2px solid #eee;
     width: 100%;
     text-align: center;
@@ -1383,18 +1383,250 @@ ul {
 
 }
 
-.backup-manager form .row-2 .server label {
+.setting .backup-manager form .row-2 .server label {
     margin: 15px;
     display: block;
     cursor: pointer;
 }
 
-.backup-manager form .row-2 .server label i {
+.setting .backup-manager form .row-2 .server label i {
     display: block;
     margin-bottom: 12px;
 }
 
-.backup-manager form .row-2 input[type=radio]:checked + .server {
+.setting .backup-manager form .row-2 input[type=radio]:checked + .server {
     border-color: var(--blue-color);
     color: var(--blue-color)
 }
+
+/* 
+|-----------------------------------|
+|----------- Profile Style ---------|
+|-----------------------------------|
+*/
+
+/* => Content => profile => overview */
+.profile .overview {
+    margin-left: 15px;
+    margin-right: 15px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .profile .overview {
+        flex-direction: column;
+    }
+    
+}
+
+.profile .overview .col-1 {
+    width: 300px;
+    text-align: center;
+}
+
+.profile .overview .col-1 img {
+   width: 120px; 
+}
+
+.profile .overview .col-1 h3 {
+    margin: 0;
+    margin-top: 10px;
+}
+
+.profile .overview .col-1 span.level {
+    color: var(--grey-color);
+    display: block;
+    margin: 10px 0;
+
+}
+
+.profile .overview .col-1 .progress-box {
+    position: relative;
+    background: #eee;
+    width: 70%;
+    height: 6px;
+    border-radius: 6px;
+    margin: 15px auto;
+}
+
+.profile .overview .col-1 .progress-box .progress {
+    background: var(--blue-color);
+    height: 6px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 6px;
+}
+
+.profile .overview .col-1 .stars i {
+    font-size: 13px;
+}
+
+.profile .overview .col-1 span.rate {
+    display: block;
+    color: var(--grey-color);
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.profile .overview .col-2 {
+    width: 100%;
+}
+
+.profile .overview .col-2 .row {
+    display: flex;
+    flex-wrap: wrap;
+    border-left: 1px solid #eee;
+    padding-left: 20px;
+}
+
+@media (max-width: 992px) {
+    .profile .overview .col-2 .row {
+        border-left: none;
+        padding-left: 0;
+    }
+    
+}
+
+.profile .overview .col-2 .row:not(:last-child) {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 12px;
+}
+
+.profile .overview .col-2 .row .profile-title {
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--grey-color);
+    width: 100%;
+}
+
+.profile .overview .col-2 .row > div {
+    margin-bottom: 10px;
+    min-width: 250px;
+}
+
+.profile .overview .col-2 .row > div span {
+    font-size: 14px;
+}
+
+.profile .overview .col-2 .row > div span:first-child {
+    color: var(--grey-color);
+}
+
+
+.profile .overview .col-2 .row label {
+    margin-top: -25px;
+    display: block;
+}
+.profile .overview .col-2 .row .toggle-switch {
+    height: 18px;
+    width: 60px;
+}
+
+.profile .overview .col-2 .row .toggle-checkbox:checked + .toggle-switch::before {
+    left: 44px;
+    color: var(--blue-color);
+}
+.profile .overview .col-2 .row .toggle-switch::before {
+    top: 3px;
+    width: 12px;
+    height: 12px;
+    font-size: 9px;
+}
+
+/* => Content => profile => other-info */
+.profile .other-info {
+    margin: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .profile .other-info {
+        flex-direction: column;
+    }
+}
+
+.profile .other-info .my-skills {
+    flex-grow: 1;
+}
+
+.profile .other-info .my-skills ul li {
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+}
+
+@media (max-width: 768px) {
+    .profile .other-info .my-skills ul li  {
+        text-align: center;
+    }
+}
+
+.profile .other-info .my-skills ul li:last-child {
+    border-bottom: none;
+}
+
+.profile .other-info .my-skills ul li span {
+    font-size: 14px;
+    background-color: #eee;
+    padding: 4px 10px;
+    border-radius: 4px;
+    margin-right: 8px;
+}
+
+.profile .other-info .latest-activities {
+    flex-grow: 2;
+}
+
+.profile .other-info .latest-activities > div {
+    padding-bottom: 25px;
+    border-bottom: 1px solid #eee;
+    padding-top: 25px;
+}
+
+.profile .other-info .latest-activities > div:first-child {
+    padding-top: 0;
+}
+
+.profile .other-info .latest-activities > div:last-child {
+    border: none;
+}
+
+.profile .other-info .latest-activities img {
+    width: 64px;
+}
+
+.profile .other-info .latest-activities .activity-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+    .profile .other-info .latest-activities .activity-box {
+        text-align: center;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+}
+
+.profile .other-info .latest-activities .activity-box div:first-of-type {
+    flex: 1;
+    margin-left: 10px;
+}
+
+.profile .other-info .latest-activities .activity-box div p {    
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.profile .other-info .latest-activities .activity-box div span {
+    color: var(--grey-color);
+    font-size: 15px;
+}
+
+
+
+
