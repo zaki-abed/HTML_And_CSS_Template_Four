@@ -1630,11 +1630,11 @@ ul {
 
 /* 
 |-----------------------------------|
-|----------- Profile Style ---------|
+|----------- Project Style ---------|
 |-----------------------------------|
 */
 
-/* => Content => profile => project-box */
+/* => Content => Projects Page => project-box */
 .projects-page {
     margin: 20px;
     display: grid;
@@ -1756,5 +1756,92 @@ ul {
 
 .projects-page .project-box .info .cost {
     font-size: 14px;
+    color: var(--grey-color);
+}
+
+/* 
+|-----------------------------------|
+|----------- Course Style ---------|
+|-----------------------------------|
+*/
+
+/* => Content => Course Page => course-box */
+.courses-page {
+    margin: 20px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.courses-page .box {
+    padding: 0;    
+}
+
+.courses-page .course-box {
+    position: relative;
+}
+
+.courses-page .course-box img.person {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 64px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.courses-page .course-box img.image-course {
+    max-width: 100%;
+}
+
+.courses-page .course-box .text {
+    padding: 0 20px
+}
+
+.courses-page .course-box .text p {
+    font-weight: 700;
+}
+
+.courses-page .course-box .text span {
+    font-size: 15px;
+    color: var(--grey-color);
+}
+
+.courses-page .course-box .course-info {
+    position: relative;
+}
+
+.courses-page .course-box .course-info::before {
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #eee;
+}
+
+.courses-page .course-box .btn-course-info {
+    text-align: center;
+    display: block;
+    font-size: 14px;
+    color: white;
+    background: var(--blue-color);
+    width: fit-content;
+    padding: 4px 10px;
+    border-radius: 6px;
+    margin: 25px auto;
+    position: relative;
+}
+
+.courses-page .course-box .info {
+    padding: 0 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.courses-page .course-box .info span  {
+    font-size: 13px;
     color: var(--grey-color);
 }
