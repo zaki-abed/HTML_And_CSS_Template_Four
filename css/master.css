@@ -1628,5 +1628,133 @@ ul {
 }
 
 
+/* 
+|-----------------------------------|
+|----------- Profile Style ---------|
+|-----------------------------------|
+*/
 
+/* => Content => profile => project-box */
+.projects-page {
+    margin: 20px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
 
+@media (max-width: 768px) {
+    .projects-page {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
+.projects-page .project-box {
+    position: relative;
+}
+
+.projects-page .project-box .date {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 13px;
+    color: var(--grey-color);
+}
+
+.projects-page .project-box .text {}
+
+.projects-page .project-box .text p {
+    /* margin: 0; */
+    margin-bottom: 5px;
+}
+
+.projects-page .project-box .text span {
+    font-size: 14px;
+    color: var(--grey-color);
+}
+
+.projects-page .project-box .team {
+    display: flex;
+    justify-content: flex-end;
+    margin: 50px 0 30px;
+}
+
+.projects-page .project-box .team img {
+    width: 40px;
+    border-radius: 50%;
+    margin-right: -12px;
+    border: 2px solid white;
+}
+
+.projects-page .project-box .team a:last-of-type img {
+    margin-right: 0;
+}
+
+.projects-page .project-box .team a:hover img {
+    position: sticky;
+}
+
+.projects-page .project-box .keys {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    padding: 20px 0;
+}
+
+@media (max-width: 768px) {
+    .projects-page .project-box .keys  {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.projects-page .project-box .keys span {
+    background: #eee;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 13px;
+}
+
+.projects-page .project-box .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+@media (max-width: 768px) {
+    .projects-page .project-box .info  {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.projects-page .project-box .info .progress-box {
+    width: 40%;
+    background-color: #eee;
+    height: 6px;
+    position: relative;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    .projects-page .project-box .info .progress-box {
+        margin: 10px auto;
+        width: 90%;
+    }
+}
+
+.projects-page .project-box .info .progress-box .progress {
+    background-color: var(--blue-color);
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 6px;
+}
+
+.projects-page .project-box .info .cost {
+    font-size: 14px;
+    color: var(--grey-color);
+}
