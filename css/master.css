@@ -794,17 +794,21 @@ ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 20px;
 }
 
 .top-search-items .row-search:last-child {
     margin-bottom: 0;
 }
 
+
+.top-search-items .row-search p {
+    font-weight: 600;
+}
+
 .top-search-items .row-search span {
     background-color: #eee;
     font-size: 13px;
-    padding: 5px;
+    padding: 4px 10px;
     border-radius: 6px;
 }
 
@@ -834,7 +838,9 @@ ul {
     flex: 1;
 }
 
-.uploads .upload-row .info .file-name {}
+.uploads .upload-row .info .file-name {
+    font-weight: 500;
+}
 
 .uploads .upload-row .info .name {
     color: var(--grey-color);
@@ -1694,8 +1700,8 @@ ul {
 .projects-page .project-box .text {}
 
 .projects-page .project-box .text p {
-    /* margin: 0; */
     margin-bottom: 5px;
+    font-weight: 500;
 }
 
 .projects-page .project-box .text span {
@@ -1778,7 +1784,6 @@ ul {
 }
 
 .projects-page .project-box .info .progress-box .progress {
-    background-color: var(--blue-color);
     border-radius: 6px;
     position: absolute;
     top: 0;
@@ -1943,7 +1948,19 @@ ul {
     border-top: 1px solid #eee;
     border-bottom: 1px solid #eee;
     padding: 20px 0;
+    position: relative;
 }
+
+.friends-page .friends-box .info .vip {
+    position: absolute;
+    top: 31px;
+    right: 0;
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--orange-color);
+    opacity: 0.2;
+}
+
 
 .friends-page .friends-box .footer {
     display: flex;
