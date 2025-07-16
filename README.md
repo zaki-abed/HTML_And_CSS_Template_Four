@@ -1,4 +1,4 @@
-# Learning HTML & CSS: Template #4
+# Dashboard
 
 This project is a comprehensive Dashboard application designed to provide a seamless user experience. The dashboard includes the following pages:
 - **index.html:** The main landing page of the dashboard.
@@ -10,7 +10,7 @@ This project is a comprehensive Dashboard application designed to provide a seam
 - **settings.html:** A settings page for configuring user preferences and application settings.
 
 ## Live Demo:
-- [https://zaki-abed.github.io/HTML_And_CSS_Template_Four/](https://zaki-abed.github.io/HTML_And_CSS_Template_Four/)
+- [https://zaki-abed.github.io/HTML_And_CSS_Template_Four/](https://zaki-abed.github.io/dashboard/)
 
 ## Screenshots
 **Index Page**
